@@ -1,0 +1,93 @@
+.header__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px
+}
+
+.header__logo {
+    font-family: Raleway, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 25px;
+    line-height: 29px;
+    text-transform: uppercase;
+    max-width: 106px;
+}
+
+.header__logo-primary {
+    color: var(--color-primary);
+}
+
+.header__search-form {
+    flex-grow: 1;
+    height: 70px;
+    padding-left: 60px;
+    background-image: url("../img/search.svg");
+    background-repeat: no-repeat;
+    background-position: left 15px center;
+    background-color: var(--color-second);
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+
+
+.header__search-input {
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    font-size: 24px;
+    color: var(--color-text);
+    padding-left: 13px;
+}
+
+.header__search-input:focus {
+    background-color: var(--color-primary);
+}
+
+.header__burger-btn {
+    width: 106px;
+    height: 40px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    transition: box-shadow .2s;
+}
+
+.header__burger-svg {
+    stroke: var(--color-text);
+    transition: stroke .2s;
+}
+
+.header__burger-btn:hover .header__burger-svg,
+.header__burger-btn:active .header__burger-svg {
+    stroke: var(--color-primary);
+}
+
+.header__burger-btn:focus,
+.header__burger-btn:active {
+    box-shadow: 0 0 3px 2px var(--color-primary);
+}
+
+
+@media (max-width: 768px) {
+
+    .header__burger-btn {
+        padding: 0;
+        width: auto;
+    }
+    .header__container {
+        flex-wrap: wrap;
+    }
+
+    .header__search-form {
+        width: 100%;
+        order: 1;
+        height: 50px;
+        padding-left: 50px;
+        background-position: left 10px center;
+    }
+}

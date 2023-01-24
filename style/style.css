@@ -1,0 +1,10 @@
+@import "normalize.css";
+@import "fonts.css";
+@import "variables.css";
+@import "basic.css";
+@import "header.css";
+@import "navigation.css";
+@import "film-week.css";
+@import "other-films.css";
+@import "footer.css";
+

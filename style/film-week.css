@@ -1,0 +1,188 @@
+.film-week {
+    padding: 60px 0;
+}
+
+.film-week__container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 30px; 
+    position: relative;
+}
+
+.film-week__container:after {
+    content: attr(data-rating);
+    position: absolute;
+    top: 15px;
+    right: 45px;
+    background-color: rgb(0, 35, 66);
+    display: block;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+    font-weight: 800;
+}
+
+.film-week__poster-wrapper {
+    position: relative;
+    line-height: 0;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.film-week__poster-wrapper:after {
+    content: '';
+    position: absolute;
+    top: 0;left: 0;
+    right: 0; bottom: 0;
+    background-color: rgba(0, 0, 0, .4);
+    z-index: 0;
+}
+
+.film-week__poster {
+    width: 100%;
+}
+
+
+
+.film-week__title {
+    font-family: Raleway, sans-serif;
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 1.2;
+    letter-spacing: 0.05em;
+    margin-right: 36px;
+}
+
+.film-week__title_origin {
+    position: absolute;
+    color: #ccc;
+    bottom: 3%; left: 2%;
+    font-family: Raleway, sans-serif;
+    font-weight: 700;
+    font-size: 40px;
+    line-height:  1.2;
+    letter-spacing: 0.05em;
+    margin-right: 36px;
+    z-index: 1;
+}
+
+.film-week__tagline {
+    font-size: 18px;
+    line-height: 1.4;
+    opacity: 0.6;
+    margin-right: auto;
+    padding-top: 10px;
+}
+
+.film-week__watch-btn {
+    width: 375px;
+    height: 72px;
+    font-size: 18px;
+    line-height: 1.4;
+    background-color: var(--color-second);
+    border-radius: 6px;
+    border: none;
+    color: var(--color-text);
+}
+
+.film-week__watch-trailer {
+    width: 104px;
+    height: 72px;
+    background-color: var(--color-second);
+    background-image: url("../img/play.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 6px;
+    transition: opacity .3s ease;
+}
+
+.film-week__watch-trailer:hover {
+    opacity: .7;
+}
+
+@media (max-width: 1280px) {
+    .film-week__title {
+        font-size: 40px;
+        margin-right: auto;
+    }
+
+    .film-week__tagline {
+        order: 1;
+        flex-basis: 40%;
+        padding-top: 0;
+    }
+}
+
+@media (max-width: 1000px) {
+    .film-week__title {
+        font-size: 35px;
+    }
+    .film-week__watch-trailer {
+        order: 1;
+    }
+}
+
+@media (max-width: 768px) {
+    .film-week {
+        padding: 30px 0;
+    }
+    .film-week__title {
+        font-size: 25px;
+    }
+    .film-week__title_origin {
+        font-size: 20px;
+    }
+
+    .film-week {
+        padding-top: 30px;
+    }
+
+    .film-week__container {
+        gap: 15px;
+    }
+
+    .film-week__tagline {
+        order: 0;
+        flex-basis: 100%;
+    }
+}
+
+
+@media (max-width: 480px) {
+
+
+    .film-week__container:after {
+        right: 30px;
+    }
+
+    .film-week__title {
+        font-size: 24px;
+    }
+
+    .film-week__title_origin {
+        font-size: 18px;
+    }
+
+    .film-week__title_origin {
+        font-size: 15px;
+    }
+
+    .film-week__poster {
+        margin-bottom: 0;
+    }
+
+    .film-week__watch-btn {
+        font-size: 16px;
+        width: auto;
+        flex-basis: 70%;
+        height: 50px;
+    }
+
+    .film-week__watch-trailer {
+        width: 50px;
+        height: 50px;
+    }
+}

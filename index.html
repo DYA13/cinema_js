@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Methed cinema - онлайн-кинотеатр</title>
+
+    <link rel="icon" href="img/me.svg">
+
+    <link rel="stylesheet" href="style/style.css">
+
+
+</head>
+
+<body>
+    <header class="header">
+        <div class="container header__container">
+            <p class="header__logo">
+                <span class="header__logo-primary">Methed</span> Cinema
+            </p>
+
+            <form class="header__search-form" action="#">
+                <input class="header__search-input" type="search" name="search" required="" placeholder="Поиск">
+            </form>
+
+            <button class="header__burger-btn" aria-label="открыть меню">
+                <svg class="header__burger-svg" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M4.94403 9.8959H34.6564" stroke-width="2.475" stroke-linecap="round" stroke-linejoin="round"></path>
+                    <path d="M28.0537 19.8H4.94403" stroke-width="2.475" stroke-linecap="round" stroke-linejoin="round"></path>
+                    <path d="M4.94403 29.7041H21.4509" stroke-width="2.475" stroke-linecap="round" stroke-linejoin="round"></path>
+                </svg>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <section class="film-week">
+            <div class="container film-week__container" data-rating="0">
+                <div class="film-week__poster-wrapper">
+                    <img class="film-week__poster" src="https://www.themoviedb.org/t/p/w1920_and_h800_multi_faces/vIPIyTJqcgOKgKcExCvTDpLpTYW.jpg" alt="постер Человек-паук: Нет пути домой">
+                    <p class="film-week__title_origin">Spider-Man: No Way Home</p>
+                </div>
+                <h2 class="film-week__title">Человек-паук: Нет пути домой</h2>
+                <a class="film-week__watch-trailer tube" href="https://youtu.be/V0hagz_8L3M" aria-label="смотреть трейлер"></a>
+            </div>
+        </section>
+
+        <section class="other-films">
+            <div class="container">
+                <h2 class="other-films__title">Другие фильмы
+                    <span class="other-films__title-add">на Methed Cinema</span>
+                </h2>
+
+                <ul class="other-films__list">
+                    <li class="other-films__item">
+                        <a class="other-films__link" data-rating="8.7">
+                            <img class="other-films__img" src="https://www.themoviedb.org/t/p/w600_and_h900_bestv2/d9s5Ma2BC7y3A8sMpxqbxWj9VQA.jpg" alt="постер">
+                        </a>
+                    </li>
+                    <li class="other-films__item">
+                        <a class="other-films__link" data-rating="7.6" href="https://youtu.be/N1r36HTysDM">
+                            <img class="other-films__img" src="https://www.themoviedb.org/t/p/w600_and_h900_bestv2/jycSKuZ4CvgPWRHdhgPA9q1EC8n.jpg" alt="постер">
+                        </a>
+                    </li>
+                    <li class="other-films__item">
+                        <a class="other-films__link" data-rating="7.9" href="https://youtu.be/MLj1nXTqc3g">
+                            <img class="other-films__img" src="https://www.themoviedb.org/t/p/w600_and_h900_bestv2/hn0B1OFQRQnzr0LeLkaUbJxoiol.jpg" alt="постер">
+                        </a>
+                    </li>
+                    <li class="other-films__item">
+                        <a class="other-films__link" data-rating="7.6" href="https://youtu.be/Q50TXqNSGi8">
+                            <img class="other-films__img" src="https://www.themoviedb.org/t/p/w600_and_h900_bestv2/s8hSilfVBsQ4jWtwucADeSromd2.jpg" alt="постер">
+                        </a>
+                    </li>
+                    <li class="other-films__item">
+                        <a class="other-films__link" data-rating="6.8" href="https://youtu.be/U9TkWe60dSQ">
+                            <img class="other-films__img" src="https://www.themoviedb.org/t/p/w600_and_h900_bestv2/u6m4JTp9ZEAF25mSo0xfStmXSHh.jpg" alt="постер">
+                        </a>
+                    </li>
+                    <li class="other-films__item">
+                        <a class="other-films__link" data-rating="8" href="https://youtu.be/Q6nepw3fskg">
+                            <img class="other-films__img" src="https://www.themoviedb.org/t/p/w600_and_h900_bestv2/irwFnLniLSu0KkiK7FMAgLounCX.jpg" alt="постер">
+                        </a>
+                    </li>
+                    <li class="other-films__item">
+                        <a class="other-films__link" data-rating="7.8" href="https://youtu.be/6sI7pZuQZPg">
+                            <img class="other-films__img" src="https://www.themoviedb.org/t/p/w600_and_h900_bestv2/6zHKgCKht3vwrtSXFvSUntSRsJh.jpg" alt="постер undefined">
+                        </a>
+                    </li>
+                    <li class="other-films__item">
+                        <a class="other-films__link" data-rating="9.2" href="https://youtu.be/Cd1ruAVbazU">
+                            <img class="other-films__img" src="https://www.themoviedb.org/t/p/w600_and_h900_bestv2/tTR8Qhk7RIirkcQuKfU8EJNJ9O2.jpg" alt="постер undefined">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+
+    </main>
+
+    <footer class="footer">
+        <div class="container footer__container">
+            <div class="footer__column contacts">
+                <p class="contacts__logo">
+                    <span class="contacts__logo-primary">Methed</span> Cinema
+                </p>
+
+                <p class="contacts__description">онлайн-кинотеатр</p>
+
+                <a href="tel:88003336202" class="contacts__phone">8 800 333 62 02</a>
+
+                <a href="mailto:help@tvmethed.ru" class="contacts__mail">help@tvmethed.ru</a>
+
+                <a href="mailto:pressa@tvmethed.ru" class="contacts__mail">pressa@tvmethed.ru</a>
+            </div>
+
+            <div class="footer__column subnav get-nav">
+                <ul class="subnav__list">
+                    <li class="subnav__item">
+                        <a href="#" class="subnav__link get-nav__link get-nav__link_triends">В тренде</a>
+                    </li>
+
+                    <li class="subnav__item">
+                        <a href="#" class="subnav__link get-nav__link get-nav__link_popular-movies">Популярные Фильмы</a>
+                    </li>
+
+                    <li class="subnav__item">
+                        <a href="#" class="subnav__link get-nav__link get-nav__link_popular-tv">Популярные сериалы</a>
+                    </li>
+
+                    <li class="subnav__item">
+                        <a href="#" class="subnav__link get-nav__link get-nav__link_top-movies">Top Фильмов</a>
+                    </li>
+
+                    <li class="subnav__item">
+                        <a href="#" class="subnav__link get-nav__link get-nav__link_top-tv">Top Сериалы</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="footer__column regulation">
+                <img class="regulation__age" src="img/18+.svg" alt="Только для совершеннолетних">
+                <p class="regulation__offer">Просматривая материалы, находящиеся на настоящем сайте, вы&nbsp;обязуетесь выполнять условия Публичной оферты</p>
+            </div>
+
+            <div class="footer__column partners">
+                <img class="partners__me" src="img/me.svg" alt="Логотип MethEd">
+                <p class="partners__description">Исследования осуществляются ООО «МЕТЭД ДЕВЕЛОПМЕНТ» при&nbsp; поддержке Фонда «SPB Tech»</p>
+            </div>
+        </div>
+    </footer>
+
+
+    <nav class="navigation">
+        <ul class="navigation__list get-nav">
+            <li class="navigation__item">
+                <a href="#" class="navigation__link get-nav__link get-nav__link_triends">В тренде</a>
+            </li>
+
+            <li class="navigation__item">
+                <a href="#" class="navigation__link get-nav__link get-nav__link_popular-movies">Популярные Фильмы</a>
+            </li>
+
+            <li class="navigation__item">
+                <a href="#" class="navigation__link get-nav__link get-nav__link_popular-tv">Популярные сериалы</a>
+            </li>
+
+            <li class="navigation__item">
+                <a href="#" class="navigation__link get-nav__link get-nav__link_top-movies">Top Фильмов</a>
+            </li>
+
+            <li class="navigation__item">
+                <a href="#" class="navigation__link get-nav__link get-nav__link_top-tv">Top Сериалы</a>
+            </li>
+        </ul>
+        <button class="navigation__close">
+            <svg class="navigation__close-cross" height="30" viewBox="0 0 365.696 365.696" width="30" xmlns="http://www.w3.org/2000/svg">
+                <path d="m243.1875 182.859375 113.132812-113.132813c12.5-12.5 12.5-32.765624 0-45.246093l-15.082031-15.082031c-12.503906-12.503907-32.769531-12.503907-45.25 0l-113.128906 113.128906-113.132813-113.152344c-12.5-12.5-32.765624-12.5-45.246093 0l-15.105469 15.082031c-12.5 12.503907-12.5 32.769531 0 45.25l113.152344 113.152344-113.128906 113.128906c-12.503907 12.503907-12.503907 32.769531 0 45.25l15.082031 15.082031c12.5 12.5 32.765625 12.5 45.246093 0l113.132813-113.132812 113.128906 113.132812c12.503907 12.5 32.769531 12.5 45.25 0l15.082031-15.082031c12.5-12.503906 12.5-32.769531 0-45.25zm0 0"></path>
+            </svg>
+        </button>
+    </nav>
+
+</body>
+
+</html>
