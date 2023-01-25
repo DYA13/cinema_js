@@ -11,7 +11,7 @@ const getData = url => fetch(url)
         if(response.ok){
             return response.json()
         }
-        throw `что то не так,ошибка ${response.status}`
+        throw `Error ${response.status}`
     })
    
     .catch(err => console.error(err));
@@ -21,3 +21,7 @@ export const getTriends = async (type ='all', period = 'week', page = 1) => {
    return await getData(url);
 
 };
+
+export const getPopular = async() => {
+    
+}

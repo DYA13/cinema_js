@@ -1,4 +1,5 @@
 import { getTriends } from "./services.js";
+import renderCard from "./renderCard.js";
 
 const filmWeek = document.querySelector('.film-week');
 
@@ -22,7 +23,11 @@ filmWeek.innerHTML =`
 
 const renderVideo = async () => {
    const data = await getTriends();
-  firstRender(data.results[0]);
+
+const [ firstCard, ...otherCard ] =data.results;
+otherCard.length = 16;
+  firstRender(firstCard);
+  renderCard(otherCard);
 }
 
 export default renderVideo;
