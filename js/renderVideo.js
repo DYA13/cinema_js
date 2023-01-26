@@ -5,7 +5,7 @@ const filmWeek = document.querySelector('.film-week');
 
 
 const firstRender = data => {
-    console.log('data:', data)
+
 
 filmWeek.innerHTML =`
 <div class="container film-week__container" 

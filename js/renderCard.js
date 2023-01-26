@@ -6,7 +6,7 @@ const renderCard = data => {
 listCard.textContent = '';
 
 const cards = data.map((item) => {
-console.log(item)
+
     const card = document.createElement('li');
 card.className = 'other-films__item';
 
