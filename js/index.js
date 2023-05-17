@@ -3,10 +3,6 @@ import renderVideo from './renderVideo.js';
 import menuLink from './menuLink.js';
 
 
-
-
-
-
 slideMenu({
     openBtn: '.header__burger-btn', 
     menu:'.navigation',

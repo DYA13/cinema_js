@@ -4,8 +4,10 @@ const renderCard = data => {
 listCard.textContent = '';
 
 const cards = data.map((item) => {
+console.log("🚀 ~ file: renderCard.js:7 ~ cards ~ item:", item)
 
-    const card = document.createElement('li');
+
+const card = document.createElement('li');
 card.className = 'other-films__item';
 
 const link = document.createElement('a');
