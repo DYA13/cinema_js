@@ -4,15 +4,13 @@ const renderCard = data => {
 listCard.textContent = '';
 
 const cards = data.map((item) => {
-console.log("🚀 ~ file: renderCard.js:7 ~ cards ~ item:", item)
-
 
 const card = document.createElement('li');
 card.className = 'other-films__item';
 
 const link = document.createElement('a');
 link.className = 'other-films__link';
-link.dataset.rating = item.vote_average;
+link.dataset.rating = item.vote_average.toFixed(1);
 
 
 const img =document.createElement('img');

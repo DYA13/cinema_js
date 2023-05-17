@@ -2,13 +2,13 @@ import { getTrends, getVideo } from "./services.js";
 import renderCard from "./renderCard.js";
 
 const filmWeek = document.querySelector('.film-week');
-console.log('filmWeek', filmWeek)
+
 
 const firstRender = (data, keyVideo ) => {
 
 filmWeek.innerHTML =`
 <div class="container film-week__container" 
-   data-rating="${data.vote_average}">
+   data-rating="${data.vote_average.toFixed(1)}">
 <div class="film-week__poster-wrapper">
     <img class="film-week__poster" 
     src="https://www.themoviedb.org/t/p/w1920_and_h800_multi_faces${data.backdrop_path}" 
@@ -28,7 +28,7 @@ ${keyVideo ?
 
 const renderVideo = async () => {
    const data = await getTrends();
-   console.log('data:',data)
+ 
 
    const [ firstCard, ...otherCard ] = data.results;
    otherCard.length = 16;
@@ -38,7 +38,6 @@ const renderVideo = async () => {
 
 const video = await getVideo(firstCard.id, firstCard.media_type);
 
-console.log('video: ', video.results[video.results.length -1])
 
 
 
