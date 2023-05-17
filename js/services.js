@@ -11,7 +11,7 @@ const getData = url => fetch(url)
         if(response.ok){
             return response.json()
         }
-        throw `Error ${response.status}`
+        throw `что то пошло не так ${response.status}`
     })
    
     .catch(err => console.error(err));
@@ -27,7 +27,19 @@ export const getTop = async (type, page = 1) => {
 return await getData(url)
 };
 
+
 export const getPopular = async(type, page = 1) => {
     const url = `${BASE_URL}${type}/popular?api_key=${API_KEY}${LANGUAGE}&page=${page}`;
     return await getData(url)
+
 };
+
+
+export const getVideo = async (id, type)=> {
+    const url = `${BASE_URL}${type}/${id}/videos?api_key=${API_KEY}${LANGUAGE}`;
+    return await getData(url);
+  
+}
+
+
+
